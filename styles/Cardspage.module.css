@@ -1,0 +1,94 @@
+.wrap {
+    padding: 0;
+    margin: 0;
+    flex: 10 1 90vh;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 95%;
+    padding-top: 2vh;
+    padding-bottom: 50px;
+  }
+  
+  .section {
+    margin: 30px;
+    box-shadow: 0px 2px 10px rgba(229, 229, 235, 0.4);
+    border: 1px solid rgba(220, 220, 220, 1);
+    border-radius: 3px;
+    padding: 20px;
+  }
+  
+  .infoField {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .image {
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    content: "";
+    filter: grayscale(40%);
+    border: 1px solid rgba(220, 220, 220, 1);
+  }
+  
+  .description {
+    padding: 0px 50px;
+    margin: 0px;
+  }
+  
+  .commentsSection {
+    margin: 30px;
+    box-shadow: 0px 2px 10px rgba(229, 229, 235, 0.4);
+    border: 1px solid rgba(220, 220, 220, 1);
+    border-radius: 3px;
+    padding: 20px;
+  }
+  
+  .commentDropdown {
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+  }
+  
+  .commentDropdow:hover {
+    cursor: pointer;
+  }
+  
+  .commentDropdown i {
+    padding: 5px;
+  }
+  
+  .line {
+    border-top: 1px solid rgba(220, 220, 220, 1);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+    }
+  
+    .section,
+    .commentsSection {
+      margin: 0px;
+      padding: 5px;
+    }
+    .section {
+      border-bottom: 1px solid rgba(220, 220, 220, 1);
+      border-top: none;
+    }
+  
+    .infoField {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .infoField img {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  
